@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <style>
+        body{
+    margin: 0;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", sans-serif;
+	background: #080F28;
+}
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        form *{
+            width: 50%;
+            margin-top: 2px;
+            border: 2px solid black;
+            height: 30px;
+        }
+        
+        .update {
+            display: none;
+        }
+        
+        .up,
+        .de {
+            background-color: #4B4B4B;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        td,
+        th {
+            border: 2px solid black;
+        }
+        
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+        
+        table {
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 5px;
+            text-align: center;
+        }    
+        .uno{
+            padding: 10px;
+        } 
+        .submit{
+            color: #0099CC;
+            background: #4B4B4B;
+            border: 2px solid black;
+            border-radius: 6px;
+            height: 35px;
+            width: 90px;
+        }
+        .submit:hover{
+      background-color: #008CBA;
+      color: white;
+ }
+           
+    </style>
+</head>
+ 
+<body>
+    
+        <h1>REGISTRO DE CLIENTES</h1>        
+                <form>
+                    <input type="servicio" placeholder='Servicio'>
+                    <input type="diagnostico" placeholder='Diagnostico'>
+                    <input type="problema" placeholder='Problema'>
+                    <input type="solucion" placeholder='Solucion'>
+                    <button id="sub" type="button" class="submit">Registrar</button>
+                    <button type="button" class="update">Actualisar</button>
+                </form>  
+
+                <div class="uno">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Diagnostico</th>
+                                <th>Problema</th>
+                                <th>Solucion</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>             
+                        </tbody> 
+                    </table> 
+                </div>
+                     
+
+    <script src="./script.js"></script>
+</body>
+ 
+</html>

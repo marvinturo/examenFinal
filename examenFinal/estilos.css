@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica",  "Arial", sans-serif;
+	background: #080F28;
+}
+/**********contenedor principal*******/
+.principal{
+    background: #080F28;
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px;
+}
+/**menu de navegacio esquina superior**/
+header{
+    display: flex;
+    height: 40px;
+    width: auto;
+    background-color: #131C33;
+    margin: 5px 0 3px 0;
+    padding: 20px;
+    border-radius:15px;
+    font-size: 20px;
+    color: whitesmoke;
+    align-items: center;
+    font-family: optima;
+}
+.menu{
+    width: 100%;
+    float: left;}
+.menu ul li{
+    float: right;
+    list-style-type: none;
+}
+.menu ul li a {
+    padding: 10px;
+  }
+.logo img{     
+    border-radius:5px;
+}
+header a:hover {
+    color: #FF9800;
+}
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+.main {
+    display: flex;
+    padding: 0;
+    margin: 10px 0 3px 0;
+    width: auto;
+}
+
+/*--------------------------------------------------------------------*/
+/*-----------------------menu lateral---------------------------------*/
+article{
+    display: flex;
+    background-color: #131C34;
+    padding: 20px;
+    border-radius:15px;
+}
+.main .contenedor nav ul li {
+	font-size: 40px;
+	font-family: sans-serif;
+	background-color: white;
+	border: 2px solid black;
+	letter-spacing: 0.1em;
+	width: 5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+	cursor: pointer;
+}
+.main .contenedor nav ul li span a{
+	color: white;
+	mix-blend-mode: difference;
+}
+.main .contenedor nav ul li::before {
+	content: '';
+	position: absolute;
+	width: 1.5em;
+	height: inherit;
+	background-color: black;
+	border-radius: 50%;
+	top: 0;
+	left: -0.75em;
+	transition: 0.5s ease-out;
+}
+.main .contenedor nav ul li:hover::before {
+	transform: scale(7);
+}
+/*--------------------------------------------------------------------*/
+/*-----------------------baner---------------------------------*/
+.baner{
+    display: flex;
+    background-color: #131C33;
+    border-radius:15px;
+    background-image: url("img/reparacion.jpg");
+    width: 100%;
+    margin-left: 10px;
+}
+footer{
+    display: flex;
+    height: 40px;
+    width: auto;
+    background-color: #131C33;
+    margin: 10px 0 3px 0;
+    padding: 20px;
+    border-radius:15px;
+    font-family: optima;
+    color: whitesmoke;
+    font-size: 20px;
+}
